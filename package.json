@@ -19,8 +19,7 @@
     "toastify": "^2.0.1"
   },
   "scripts": {
-    "start": "node node_modules/.bin/serve -s build",
-    "dev": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

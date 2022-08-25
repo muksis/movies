@@ -78,7 +78,7 @@ const Main = () => {
                   ? movie?.overview
                   : `${movie?.overview.substring(0, 150)}...`}
                 <button
-                  className='text-red-300 text-bold pl-2'
+                  className='text-yellow-300 text-bold pl-2'
                   onClick={() => setReadMore(!readMore)}
                 >
                   {readMore ? 'Show Less' : 'Read More'}

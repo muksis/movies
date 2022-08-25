@@ -50,11 +50,11 @@ const SignIn = () => {
                     placeholder='Password'
                     required
                   />
-                  <button className='bg-red-600 py-3 my-6 rounded font-bold'>
+                  <button className='bg-yellow-600 py-3 my-6 rounded font-bold'>
                     Sign In
                   </button>
                   <p className='py-8'>
-                    <span className='text-gray-600'>New to Clonflix?</span>
+                    <span className='text-gray-600'>New to Movies?</span>
                     <Link to='/sign-up'> Sign Up</Link>
                   </p>
                 </form>

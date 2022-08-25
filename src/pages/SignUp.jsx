@@ -63,12 +63,12 @@ const SignUp = () => {
                     type='password'
                     placeholder='Password'
                   />
-                  <button className='bg-red-600 py-3 my-6 rounded font-bold'>
+                  <button className='bg-yellow-600 py-3 my-6 rounded font-bold'>
                     Sign Up
                   </button>
                   <p className='py-8'>
                     <span className='text-gray-600'>
-                      Already subscribed to Clonflix?
+                      Already subscribed to Movies?
                     </span>
                     <Link to='/sign-in'> Sign In</Link>
                   </p>
