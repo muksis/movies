@@ -8,6 +8,7 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Account from './pages/Account';
 import ProtectedRoute from './components/ProtectedRoute';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               }
             />
           </Routes>
+          <Footer />
         </AuthContextProvider>
       </Router>
       <ToastContainer />
