@@ -7,7 +7,7 @@ const Footer = () => {
         <img src={tmdb} alt='logo' className='h-5' />
       </div>
       <div>
-        <p className='text-white'>
+        <p className='text-white p-2'>
           This product uses the TMDB API but is not endorsed or certified by
           TMDB
         </p>
