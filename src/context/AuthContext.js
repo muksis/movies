@@ -1,7 +1,12 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import { auth, db } from "../firebase.config";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
-import { setDoc, doc } from "firebase/firestore";
+import { createContext, useContext, useState, useEffect } from 'react';
+import { auth, db } from '../firebase.config';
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
+import { setDoc, doc } from 'firebase/firestore';
 
 const AuthContext = createContext();
 
@@ -9,9 +14,10 @@ export function AuthContextProvider({ children }) {
   const [user, setUser] = useState({});
 
   const signUp = (email, password) => {
-    createUserWithEmailAndPassword(auth, email, password);
-    setDoc(doc(db, "users", email), {
-      savedMovies: []
+    createUserWithEmailAndPassword(auth, email, password).then((res) => {
+      setDoc(doc(db, 'users', email), {
+        savedMovies: [],
+      });
     });
   };
 
@@ -29,7 +35,7 @@ export function AuthContextProvider({ children }) {
     });
     return () => {
       unsubscribe();
-    }
+    };
   });
 
   return (
